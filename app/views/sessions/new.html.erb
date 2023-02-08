@@ -1,0 +1,14 @@
+<h1>Sign in</h1>
+<%= form_with url: sign_in_path do|f| %> 
+    <div class="mb-2">
+        <%= f.label :email %><br>
+        <%= f.text_field :email ,class:"form_control",placeholder:"Email"%>
+    </div>
+    <div class="mb-2">
+        <%= f.label :password %><br>
+        <%= f.password_field :password,class:"form_control" ,placeholder:"password"%>
+    </div>
+    <div class="mb-2">
+        <%= f.submit "Sign in" ,class:"btn btn-primary"%>
+    </div>
+<%end%>
